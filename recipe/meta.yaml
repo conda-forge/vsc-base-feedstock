@@ -1,23 +1,18 @@
-{% set name = "vsc-base" %}
 {% set version = "2.5.7" %}
-{% set md5 = "bcd1626c5be8b5e38b9060e7f42cecdb" %}
 
 package:
-  name: {{ name }} 
+  name: vsc-base
   version: {{ version }}
 
 source:
-  fn: {{name}}-{{version}}.tar.gz
-  url: https://pypi.python.org/packages/da/90/ee40b1a6a5bfed24139042c737500a9b45db0373a6735e76481fc860fe37/{{name}}-{{version}}.tar.gz
-  md5: {{ md5 }} 
+  fn: vsc-base-{{version}}.tar.gz
+  url: https://pypi.io/packages/source/v/vsc-base/vsc-base-{{ version }}.tar.gz
+  sha256: 5229758c1fb330720ff8ef4e1a533a430c93336927b2ecef08e1fa03f3662ccb
 
 build:
   number: 0
   skip: True  # [win or py3k]
-  script: |
-     python setup.py install  \
-     --single-version-externally-managed \
-     --record=record.txt 
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
@@ -50,5 +45,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - jerowe 
+    - jerowe
     - boegel
