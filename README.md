@@ -1,26 +1,26 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About vsc-base
 ==============
 
 Home: https://github.com/hpcugent/vsc-base
 
-Package license: LPGLv2+
+Package license: LGPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vsc-base-feedstock/blob/master/LICENSE.txt)
 
 Summary: Common tools used within our organization. Originally created by the HPC team of Ghent University (http://ugent.be/hpc).
-
-
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/vsc-base-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/vsc-base-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/vsc-base-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/vsc-base-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4542&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/vsc-base-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -65,7 +65,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -114,6 +114,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@anthchirp](https://github.com/anthchirp/)
 * [@boegel](https://github.com/boegel/)
 * [@jerowe](https://github.com/jerowe/)
 
