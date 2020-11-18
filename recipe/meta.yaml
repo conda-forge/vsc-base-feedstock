@@ -30,10 +30,6 @@ test:
   imports:
     - vsc
     - vsc.utils
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/hpcugent/vsc-base
