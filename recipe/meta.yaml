@@ -1,5 +1,5 @@
 {% set name = "vsc-base" %}
-{% set version = "3.4.9" %}
+{% set version = "3.4.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vsc-base-{{ version }}.tar.gz
-  sha256: 07662572fe3433e79d859c1bbe1f0d44dc91e96dea260e496ba369433819d608
+  sha256: c3c0ede07b6ebb5daf122cb2967df8a7f689b8416678bdb79ae22ec87b2655e6
 
 build:
   number: 0
