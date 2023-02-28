@@ -1,11 +1,11 @@
-About vsc-base
-==============
+About vsc-base-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vsc-base-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hpcugent/vsc-base
 
 Package license: LGPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vsc-base-feedstock/blob/main/LICENSE.txt)
 
 Summary: Common tools used within our organization. Originally created by the HPC team of Ghent University (http://ugent.be/hpc).
 
