@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vsc-base-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vsc-base-{{ version }}.tar.gz
   sha256: 8e6a14431d3ebd19c4746a77398510fa8bdd985db5d192cc50785995b72e656e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - vsc-install >=0.15.2
   run:
     - coloredlogs <6.0
     - future >=0.16.0
     - humanfriendly
-    - python >=3.6
+    - python >={{ python_min }}
     - vsc-install >=0.15.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - vsc
     - vsc.utils
